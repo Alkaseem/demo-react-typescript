@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="body">
       <Download />
-      {/* <Pdf /> */}
+      <Pdf />
     </div>
   );
 }

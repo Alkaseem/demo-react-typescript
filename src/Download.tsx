@@ -10,9 +10,9 @@ const ref: React.RefObject<HTMLDivElement> = React.createRef();
 const Download = () => {
   return (
     <>
-      <div className="post" ref={ref}>
+      {/* <div className="post" ref={ref}>
         <h1>Goodmoeni</h1>
-      </div>
+      </div> */}
       <PDFDownloadLink fileName={`My test`} document={<Demo />}>
         <button>
           <File size={10} strokeWidth={3} />

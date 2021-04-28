@@ -39,11 +39,19 @@ export const Wrapper = styled.div`
       }
 `;
 
-export const Header = styled.header`
+export const TopHeder = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 25%;
+  // height: 25%;
+  padding: 0px 15px;
+`;
+
+export const Header = styled.head`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
   padding: 0px 15px;
   background-color: #18a956;
 `;
@@ -109,13 +117,13 @@ export const Main = styled.main`
 // `;
 
 export const Line = styled.hr`
-  border: 2px solid green;
-  width: 97%;
-  margin-top: 50px;
+  border: 1px solid #18a956;
+  width: 100%;
   border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 5px;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
 `;
 
 export const Table = styled.div`

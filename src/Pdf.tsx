@@ -6,6 +6,8 @@ import {
   Table,
   Footer,
   ImageContainer,
+  TopHeder,
+  Line,
 } from "./Pdf.style";
 import logo from "./logo.png";
 
@@ -26,20 +28,22 @@ const Pdf = () => {
                 <div>Protocol Services</div>
               </section>
             </Header> */}
-            <Header>
-              <section className="text-white h5">
+            <TopHeder>
+              <section>
                 <ImageContainer>
                   <img alt="logo" src={logo} />
                 </ImageContainer>
                 <div className="h4">Federal Airports Authority of Nigeria</div>{" "}
-                <p className="text-center">
-                  Nnamdi Azikiwe International Airport
-                </p>
-                <p className="text-center">Protocol Services Units</p>
+                <p className="text-center h6">Nnamdi Azikiwe International</p>
+              </section>
+            </TopHeder>
+            <Header>
+              <section className="text-white h5">
+                <p className="text-center">Airport Protocol Services Unit</p>
                 <p className="text-white text-center h3">INVOICE DETAILS</p>
               </section>
             </Header>
-
+            <Line />
             <Main>
               <section className="client-details">
                 <div className="details">
@@ -72,6 +76,7 @@ const Pdf = () => {
                 </div>
               </section>
             </Main>
+            <Line />
             <Table>
               <div className="table-responsive">
                 <table className="table">
@@ -97,9 +102,9 @@ const Pdf = () => {
                         Protocol Services - Fuel Surcharge at Nnam-di Azikiwe
                         International Airport
                       </td>
-                      <td>2</td>
-                      <td>30000</td>
-                      <td>60000</td>
+                      <td className="text-center">2</td>
+                      <td className="text-left">30000</td>
+                      <td className="text-right">60000</td>
                     </tr>
                   </tbody>
                 </table>
